@@ -1,0 +1,16 @@
+GET http://localhost:3000
+###
+
+POST http://localhost:3000/programacion
+Content-Type: 'application/json'
+
+{
+    "id": "4",
+    "titulo": "Web 1",
+    "lenguaje": "HTML",
+    "vistas": 1500,
+    "nivel": "básico"
+}
+
+###
+GET http://localhost:3000/cursos

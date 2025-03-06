@@ -1,0 +1,32 @@
+GET http://localhost:3010
+###
+GET http://localhost:3010/cursos/programacion
+
+###
+GET http://localhost:3010/cursos
+
+###
+GET http://localhost:3010/cursos/programacion/python
+
+###
+GET http://localhost:3010/cursos/programacion/basico
+
+###
+GET http://localhost:3010/cursos/matematicas/calculo
+
+###
+POST http://localhost:3010/cursos/programacion
+Content-Type: application/json
+
+{"id": 4,
+"titulo" : "Aprende Node.js" ,
+"lenguaje" : "javascript" ,
+"vistas" : 45676,
+"nivel" : "basico"
+}
+
+###
+DELETE http://localhost:3010/cursos/programacion/4
+
+### 
+PUT http://localhost:3010/cursos/programacion/4
